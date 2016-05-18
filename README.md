@@ -2,15 +2,18 @@
 redux-ajax是一款redux中间件，依赖于jquery
 
 # redux-ajax demo
-1.store中引入redux-ajax
+* store中引入redux-ajax
+```javascript 
   import { createStore, applyMiddleware } from 'redux'
   import ajaxMiddleware from 'redux-ajax'
   const createStoreWithMiddleware = applyMiddleware(
       ajaxMiddleware
   )(createStore)
   const store = createStoreWithMiddleware(rootReducer, initialState)
+```
   
-2.action中加入相关一部action
+* action中加入相关一部action
+```javascript 
   export function getRemoteData(url) {
       return {
           type: GET_REMOTE_DATA,
@@ -28,3 +31,4 @@ redux-ajax是一款redux中间件，依赖于jquery
           }
       }
   }
+```
