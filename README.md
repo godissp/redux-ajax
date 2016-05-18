@@ -2,7 +2,8 @@
 redux-ajax是一款redux中间件，依赖于jquery
 
 # redux-ajax demo
-1. 进入项目文件夹安装npm模块
+1. 进入项目文件夹安装npm模块  
+
 `npm install redux-ajax --save-dev`
 
 2. store中引入redux-ajax
